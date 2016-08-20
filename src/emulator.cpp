@@ -35,7 +35,8 @@ void CHIP8Emulator::setKeys() {
 
 // Play the beep from the speakers
 void CHIP8Emulator::playBeep() {
-	std::cout << "BUZZ BUZZ BUZZ" << std::endl; 
+	//std::cout << "BUZZ BUZZ BUZZ" << std::endl;
+	std::cout << '\a' << std::flush;
 }
 
 // Draw the screen from the chips video memory to the screen
