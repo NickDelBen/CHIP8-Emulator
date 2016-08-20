@@ -1,6 +1,8 @@
 #ifndef _H_SDL_IO
 #define _H_SDL_IO
 
+#define SDL_WINDOW_NAME "CHIP-8 Emulator"
+
 #include <iostream>
 #include <inttypes.h>
 #include <SDL2/SDL.h>

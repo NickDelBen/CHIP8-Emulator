@@ -88,7 +88,7 @@ void SDLDisplay::initialize() {
 		throw 1;
 	}
 	// Create the display window
-	this->display_window = SDL_CreateWindow("Display_window_editme", 100, 100, this->pixel_width, this->pixel_height, SDL_WINDOW_SHOWN);
+	this->display_window = SDL_CreateWindow(SDL_WINDOW_NAME, 100, 100, this->pixel_width, this->pixel_height, SDL_WINDOW_SHOWN);
 	if (this->display_window == nullptr){
 		std::cout << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
 		SDL_Quit();
